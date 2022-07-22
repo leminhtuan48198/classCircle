@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Circle=function(radius,color){
+        this.radius=radius;
+        this.color=color;
+        this.getRadius=function(){
+            return this.radius;
+        }
+        this.getArea=function(){
+            return Math.PI*this.radius*this.radius;
+        }
+
+
+    }
+    let circle1=new Circle(2,"blue")
+    let radius=circle1.getRadius();
+    let area=circle1.getArea();
+    alert( 'Hinh tron co ban kinh '+radius+' va dien tich la '+area);
+    let circle2=new Circle(3,"green")
+
+    alert( 'Hinh tron co ban kinh '+circle2.getRadius()+' va dien tich la '+circle2.getArea());
+    let circle3=new Circle(4,"red")
+
+    alert( 'Hinh tron co ban kinh '+circle3.getRadius()+' va dien tich la '+circle3.getArea());
+
+</script>
+</body>
+</html>
